@@ -1,0 +1,5 @@
+# sudo dockerd
+# docker build . --tag search
+# docker run --publish 8080:8080 --name bb search
+# gcloud builds submit . --tag=gcr.io/moemoemoe/search
+# gcloud run deploy search --image=gcr.io/moemoemoe/search --platform=managed --allow-unauthenticated --region=us-central1

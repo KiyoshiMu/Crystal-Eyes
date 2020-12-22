@@ -1,0 +1,4 @@
+outs:
+- md5: 9ff69dcc9a365ecbaf68b6df4af62a11
+  size: 266926
+  path: idx_label.pkl

@@ -1,0 +1,8 @@
+/data
+.*
+/__pycache__
+/tests
+*png
+*jpg
+*xml
+/crystal_eyes

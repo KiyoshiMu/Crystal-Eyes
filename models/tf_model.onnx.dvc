@@ -1,0 +1,4 @@
+outs:
+- md5: bc16997940c40dd9beb274a59fda38b6
+  size: 3183516
+  path: tf_model.onnx

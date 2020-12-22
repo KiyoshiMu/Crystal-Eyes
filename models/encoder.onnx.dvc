@@ -1,0 +1,4 @@
+outs:
+- md5: 35959c9f1869922667d55eda5f8ddfe5
+  size: 13623653
+  path: encoder.onnx

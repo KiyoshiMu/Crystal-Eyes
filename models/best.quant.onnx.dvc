@@ -1,0 +1,4 @@
+outs:
+- md5: 6243110bc6076f40d51fc14faf8e1688
+  size: 7467004
+  path: best.quant.onnx
