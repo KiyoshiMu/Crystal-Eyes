@@ -6,6 +6,9 @@ jobs:
     container: docker://dvcorg/cml-py3:latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
       - name: cml_run
         shell: bash
         env:
@@ -17,7 +20,7 @@ jobs:
           # Pull models
           dvc pull --run-cache
           pytest
-
+  
       - name: Python Poetry Action
         uses: abatilo/actions-poetry@v2.1.0
         with:
