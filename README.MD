@@ -65,29 +65,30 @@ def fetch():
 
 To our knowledge, Crystal Eyes is the first system that can recognize more than *1500* 2D characters with high performance using machine learning. Other methods, like [Moeflow](https://freedomofkeima.com/moeflow/) only support 100 characters with an accuracy of 70% (unknown whether it is top-N or first-1-precision).
 
-This system's advantage is that it doesn't rely on indexing, making it lightweight and agile, which means it can recognize **unseen images**.
+This system's advantage is that the recognition doesn't rely on indexing, making it lightweight and enabling it to recognize **unseen images**.
 
 An example would be someone's original line sketch.
+
 ![sketch](https://pbs.twimg.com/media/D-FZQNVU8AA7u6-?format=jpg&name=large)
 (Source: https://twitter.com/DELF_001/status/1144293924950777857)
 
-Crystal Eyes's result
+Crystal Eyes's result:
 ![line](performance/line.png)
 
-Google Image's result
+Google Image's result:
 ![lineG](performance/lineG.png)
 
 Or colored sketch (a GAN model made the colors)
 
-Crystal Eyes's result
+Crystal Eyes's result:
 ![color](performance/color.png)
 
-Google Image's result
+Google Image's result:
 ![colorG](performance/colorG.png)
 
 ### Drawback
 
-1. The design is first to detect the head. If the head cannot be detected correctly, the downstream process will be severely undermined. Also, if an input is a character's face, which has less information than the head, the encoder and classifier's performance will deteriorate.
+1. The design is first to detect the head. If the head cannot be detected correctly, the downstream process will be severely undermined. Also, if an input is a character's face with less information than the head, the encoder and classifier's performance will deteriorate.
 
 2. If more characters need to be recognized, the system needs to re-train the classifier. (It's not a big deal, though).
 ## Development
