@@ -2,7 +2,7 @@
 name = "crystal_eyes"
 version = "0.1.0"
 description = ""
-authors = ["YewtsingMu <mooyewtsing@gmail.com>"]
+authors = ["KiyoshiMu <mooyewtsing@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -12,7 +12,6 @@ fastapi = "^0.62.0"
 numpy = "^1.19.4"
 Pillow = "^8.0.1"
 python-multipart = "^0.0.5"
-dvc = "^1.11.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
