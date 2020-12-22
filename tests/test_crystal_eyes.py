@@ -2,9 +2,9 @@ import os
 
 import pytest
 
-from crystal_eyes.detector import HeadClf
+from crystal_eyes.classifer import Classifer
+from crystal_eyes.detector import Detector, HeadClf
 from crystal_eyes.utils import pil_loader
-from crystal_eyes.workplace import Classifer, Detector
 
 encoder_p = os.getenv("encoder", "models/encoder.onnx")
 tf_model_p = os.getenv("tf_model", "models/tf_model.onnx")

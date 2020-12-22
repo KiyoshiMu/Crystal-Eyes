@@ -1,6 +1,5 @@
 import logging
-from abc import abstractmethod
-from typing import Protocol
+from abc import ABC, abstractmethod
 
 import numpy as np
 import onnxruntime as rt
@@ -13,7 +12,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
-class HeadClf(Protocol):
+class HeadClf(ABC):
     @abstractmethod
     def predict(self, head0: Image.Image, topN: int = 3) -> list:
         raise NotImplementedError
