@@ -1,4 +1,6 @@
 [core]
-    remote = storage
+    remote = ce
 ['remote "storage"']
     url = gdrive://13O4yB27nzPuuH_lP2fYwGd1CK6OGzVMw
+['remote "ce"']
+    url = gdrive://1uWo09DRxvQSJsPvMSvYzHWiV9H6ZXCTd
