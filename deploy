@@ -9,4 +9,4 @@
 # docker push kiyoshimu/crystal_eyes
 
 # tar -cf models.tar  models/*onnx models/*pkl
-#
+# poetry export -f requirements.txt --output requirements.txt
